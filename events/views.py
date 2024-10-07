@@ -7,6 +7,7 @@ from dateutil import parser
 from .mixins import EventOperationsMixin
 from rest_framework.response import Response
 from django.shortcuts import get_object_or_404
+from rest_framework import status
 
 class EventViewSet(viewsets.ModelViewSet, EventOperationsMixin):
     serializer_class = EventSerializer
